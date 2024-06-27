@@ -26,19 +26,19 @@
 
 # 1 - IMC = peso / (altura * altura)
 $altura = 1.81;
-$peso = 79.3;
+$peso = 85;
 
 $imc = $peso / ($altura * $altura);
-echo "1. Seu IMC é: $imc <br>";
+echo "1. Seu IMC é: $imc <br><hr>";
 
 if($imc < 18.5) {
-    echo "Você está abaixo do peso. <br>";
+    echo "Você está abaixo do peso. <br><hr>";
 } elseif ($imc >= 18.5 && $imc < 25) {
-    echo "Você está no seu peso ideal. <br>";
+    echo "Você está no seu peso ideal. <br><hr>";
 } elseif ($imc >= 25 && $imc < 30) {
-    echo "Você está com sobrepeso. <br>";
+    echo "Você está com sobrepeso. <br><hr>";
 } else {
-    echo "Você está obeso. <br>";
+    echo "Você está obeso. <br><hr>";
 }
 
 # 2 - Verificação de Pagamento
@@ -46,31 +46,33 @@ $tem_saldo = true;
 if($tem_saldo) {
     $fazer_compra = true;
     if($fazer_compra) {
-        $saldo_disponivel = 500.00;
-        $valor_compra = 350.00;
+        $saldo_disponivel = 200.00;
+        $valor_compra = 250.00;
         if($valor_compra <= $saldo_disponivel) {
-            echo "Transação concluída com sucesso! <br>";
+            echo "Transação concluída com sucesso! <br><hr>";
         } else {
-            echo "Saldo insuficiente para a compra! <br>";
+            echo "Saldo insuficiente para a compra! <br><hr>";
         }
     } else {
-        echo "Obrigado, tenha um bom dia. <br>";
+        echo "Obrigado, tenha um bom dia. <br><hr>";
     }
 } else {
-    echo "Sem saldo, impossível realizar a venda. <br>";
+    echo "Sem saldo, impossível realizar a venda. <br><hr>";
 }
 
 # 3 - Conversor de Temperatura
-$temperatura_celsius = 20.0;
+$temperatura_celsius = 39.5;
 $temperatura_fahrenheit = ($temperatura_celsius * 9/5) + 32;
 
-echo "Temperatura em Fahrenheit é: $temperatura_fahrenheit F <br>"; 
+echo "Temperatura em Fahrenheit é: $temperatura_fahrenheit F <br><hr>"; 
 
 # 4 - Verificação de acesso
 $maior_idade = false;
-$autorizacao_pais = false;
+$autorizacao_pais = true;
 if($maior_idade || $autorizacao_pais) {
-    echo "Acesso concedido ao conteúdo restrito. <br>";
+    echo "Acesso concedido ao conteúdo restrito. <br><hr>";
 } else {
-    echo "Acesso negado. <br>";
+    echo "Acesso negado. <br><hr>";
 }
+
+
