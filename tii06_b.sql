@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tb_contato` (
-  `id_contato` int(4) NOT NULL,
+  `id_contato` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT,
   `nome_contato` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
   `titulo` varchar(100) NOT NULL,
